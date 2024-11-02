@@ -2,6 +2,8 @@ import { Config, Data } from "@/core";
 import { ButtonGroup, ButtonGroupProps } from "./blocks/ButtonGroup";
 import { Card, CardProps } from "./blocks/Card";
 import { Columns, ColumnsProps } from "./blocks/Columns";
+import { Grid, GridProps } from "./blocks/Grid";
+import { GridItem, GridItemProps } from "./blocks/GridItem";
 import { Hero, HeroProps } from "./blocks/Hero";
 import { Heading, HeadingProps } from "./blocks/Heading";
 import { Flex, FlexProps } from "./blocks/Flex";
@@ -18,6 +20,8 @@ export type Props = {
   ButtonGroup: ButtonGroupProps;
   Card: CardProps;
   Columns: ColumnsProps;
+  Grid: GridProps;
+  GridItem: GridItemProps;
   Hero: HeroProps;
   Heading: HeadingProps;
   Flex: FlexProps;
@@ -45,7 +49,7 @@ export const conf: UserConfig = {
   },
   categories: {
     layout: {
-      components: ["Columns", "Flex", "VerticalSpace"],
+      components: ["Columns", "Grid", "GridItem", "Flex", "VerticalSpace"],
     },
     typography: {
       components: ["Heading", "Text"],
@@ -59,6 +63,8 @@ export const conf: UserConfig = {
     ButtonGroup,
     Card,
     Columns,
+    Grid,
+    GridItem,
     Hero,
     Heading,
     Flex,

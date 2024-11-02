@@ -1,0 +1,16 @@
+.Grid {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  min-height: 240px; /* NEW */
+  min-width: 0; /* NEW; needed for Firefox */
+  padding-left: 64px;
+  padding-right: 64px;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .Grid {
+    display: grid;
+  }
+}
